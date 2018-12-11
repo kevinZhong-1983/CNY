@@ -183,12 +183,22 @@ $(document).ready(function(){
                 $('.page1').hide()
                 $('.page2').show()
 
+                var _timeout = setTimeout(function () {
+
+                    $('.page2').hide()
+                    $('.page3').show()
+                    clearTimeout(_timeout);
+
+                }, 2600);
+
+
             }
             last_x = x;
             last_y = y;
             last_z = z;
         }
     }
+
     shakingGesture_init();
 
 
