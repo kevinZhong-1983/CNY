@@ -157,57 +157,35 @@ $(document).ready(function(){
 
     //重力感应
 
-    if (window.DeviceMotionEvent) {
-
-        window.addEventListener('devicemotion', motionHandler, false);
-
-    } else {
-
-        alert("你的设备不支持位置感应!");
+    var SHAKE_THRESHOLD = 300;
+    var last_update = 0;
+    var x = y = z = last_x = last_y = last_z = 0;
+    function shakingGesture_init() {
+        if (window.DeviceMotionEvent) {
+            window.addEventListener('devicemotion', deviceMotionHandler, false);
+        } else {
+            alert('not support mobile event');
+        }
     }
-
-    var  SHAKE_SPEED = 300;
-    var lastTime = 0;//上次变化的时间
-    var x = y = z = lastX = lastY = lastZ = 0;//位置变量初始化
-
-    function motionHandler(event) {
-        var acceleration = event.accelerationIncludingGravity;
-        var curTime = Date.now();//取得当前时间
-        if ((curTime - lastTime) > 100) {
-            var diffTime = curTime - lastTime;
-            lastTime = curTime;
+    function deviceMotionHandler(eventData) {
+        var acceleration = eventData.accelerationIncludingGravity;
+        var curTime = new Date().getTime();
+        if ((curTime - last_update) > 100) {
+            var diffTime = curTime - last_update;
+            last_update = curTime;
             x = acceleration.x;
             y = acceleration.y;
             z = acceleration.z;
-            //计算摇动速度
-            var speed = Math.abs(x + y + z - lastX - lastY - lastZ) / diffTime * 1000;
-            if (speed > SHAKE_SPEED) {
-
-                if (_isClaim) return false;
-                _isClaim = true;
-
-                $('.page1').hide()
-                $('.page2').show()
-
-                var _timeout = setTimeout(function () {
-
-                    clearTimeout(_timeout);
-
-                }, 2600);
+            var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
+            if (speed > SHAKE_THRESHOLD) {
+                alert("摇动了");
             }
-            lastX = x;
-            lastY = y;
-            lastZ = z;
+            last_x = x;
+            last_y = y;
+            last_z = z;
         }
     }
-
-
-
-
-
-
-
-
+    shakingGesture_init();
 
 
 
