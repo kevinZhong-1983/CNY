@@ -157,7 +157,7 @@ $(document).ready(function(){
 
     //重力感应
 
-    var SHAKE_THRESHOLD = 300;
+    var SHAKE_THRESHOLD = 3000;
     var last_update = 0;
     var x = y = z = last_x = last_y = last_z = 0;
     function shakingGesture_init() {
@@ -178,7 +178,11 @@ $(document).ready(function(){
             z = acceleration.z;
             var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
             if (speed > SHAKE_THRESHOLD) {
-                alert("摇动了");
+
+
+                $('.page1').hide()
+                $('.page2').show()
+
             }
             last_x = x;
             last_y = y;
