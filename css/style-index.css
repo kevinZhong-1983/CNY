@@ -188,7 +188,7 @@ img{vertical-align:top}
 
 
     position: relative;
-    width:5.1rem;
+    width:5.2rem;
     height: .45rem;
     top: 90%;
     margin: 0 auto;
@@ -489,7 +489,7 @@ select{
     height: .56rem;
     margin: 0 auto;
     margin-top: .3rem;
-    display: block;
+    display: none;
 
 
 }
