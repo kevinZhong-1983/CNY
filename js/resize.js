@@ -25,6 +25,11 @@ function kevin_resize(o) {
         // 浏览器的高度
         var window_h = doc.clientHeight;
 
+        if(window_h<500){
+
+            window_h=500
+        }
+
         // 字号;
         var fontSize;
 
@@ -50,6 +55,9 @@ function kevin_resize(o) {
 
         el.style.fontSize = fontSize * 100 + 'px';
         o.then && o.then(fontSize);
+
+
+
 
     };
 
