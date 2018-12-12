@@ -186,6 +186,18 @@ $(document).ready(function(){
 
 
 
+    //skip
+
+    $('.skip').click(function(){
+
+        $('.page1').hide()
+        $('.page3').show()
+
+
+    })
+
+
+
 
     //重力感应
 

@@ -64,6 +64,18 @@ img{vertical-align:top}
 
 }
 
+.skip{
+
+    position: absolute;
+    color: white;
+    font-size: .25rem;
+    right: 5%;
+    top: 4%;
+    border-bottom: 1px solid #fff;
+
+
+}
+
 .p1_yun_mc{
 
     position: absolute;
