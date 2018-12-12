@@ -125,7 +125,7 @@ function loader_Fun(){
 
 
                             $('.p1_yun_mc').css('top',50+'%')
-                            $('.p1_txt').css('top',85+'%')
+                            $('.p1_txt').css('top',78+'%')
 
                         }
 
