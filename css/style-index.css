@@ -131,6 +131,39 @@ img{vertical-align:top}
 }
 
 
+@media screen and (max-device-width:375px) and (max-device-height:724px){
+
+
+    .p1_yun_mc{
+
+        position: absolute;
+        width: 1.93rem;
+        height: 1.93rem;
+        top:43%;
+        margin-top: -1.16rem;
+        left: 50%;
+        margin-left: -.96rem;
+
+
+    }
+
+
+    .p1_txt{
+
+        position: absolute;
+        width: 1.92rem;
+        height: .72rem;
+        top:72%;
+        left: 50%;
+        margin-left: -.96rem;
+
+
+    }
+
+
+}
+
+
 .page2{
 
     position: absolute;
