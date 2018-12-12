@@ -116,6 +116,20 @@ function loader_Fun(){
                         $('.main').css('display','block')
 
 
+                        if($(window).width()==375&&$(window).height()==724){
+
+
+                            $('.p1_yun_mc').css('top',43+'%')
+                            $('.p1_txt').css('top',72+'%')
+
+                        }else{
+
+
+                            $('.p1_yun_mc').css('top',50+'%')
+                            $('.p1_txt').css('top',85+'%')
+
+                        }
+
                     }, 100);
                 }
                 callbacks[i + 1] && callbacks[i + 1]();
