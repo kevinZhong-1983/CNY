@@ -103,7 +103,7 @@ loader_Fun()
 function loader_Fun(){
 
     var callbacks = [];
-    imgLoader(['images/AdviseVertical.png','images/bg.jpg','images/guize.png','images/p1_mobile.png','images/p1_txt.png','images/yun1.png','images/p1_yun2.png','images/p2.gif','images/p3.jpg','images/p3-01.png','images/p3-01_1.png','images/p3-02.png','images/p3-03.png','images/p3-04.png','images/p3-05.png','images/p3-06.png','images/p3-07.png','images/p3_btn.png','images/p3_btn2.png','images/p3_title.png','images/p5_bg.jpg','images/page1_bg.jpg','images/qr.jpg','images/text.png','images/text1.png','images/title2.png','images/title3.png'], function(percentage){
+    imgLoader(['images/AdviseVertical.png','images/bg.jpg','images/guize.png','images/p1_mobile.png','images/p1_txt.png','images/p1_yun1.png','images/p1_yun2.png','images/p2.gif','images/p3.jpg','images/p3-01.png','images/p3-01_1.png','images/p3-02.png','images/p3-03.png','images/p3-04.png','images/p3-05.png','images/p3-06.png','images/p3-07.png','images/p3_btn.png','images/p3_btn2.png','images/p3_title.png','images/p5_bg.jpg','images/page1_bg.jpg','images/qr.jpg','images/text.png','images/text1.png','images/title2.png','images/title3.png'], function(percentage){
 
         var i = callbacks.length;
         callbacks.push(function(){

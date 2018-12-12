@@ -60,7 +60,10 @@ img{vertical-align:top}
 
 
     position: absolute;
-    width: 100%;
+    width: 9rem;
+    height: 12.36rem;
+    left: 50%;
+    margin-left: -4.5rem;
 
 }
 
