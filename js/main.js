@@ -115,9 +115,6 @@ function loader_Fun(){
                         $('.loading').remove();
                         $('.main').css('display','block')
 
-
-                        alert($(window).height())
-
                         if($(window).width()==375&&$(window).height()==724){
 
 
