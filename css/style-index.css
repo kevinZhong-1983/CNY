@@ -52,6 +52,7 @@ img{vertical-align:top}
     position: absolute;
     width: 100%;
     height: 100%;
+    display: block;
 
 }
 
@@ -63,10 +64,7 @@ img{vertical-align:top}
 
 }
 
-
-
-
-.p1_yun{
+.p1_yun_mc{
 
     position: absolute;
     width: 1.93rem;
@@ -75,6 +73,21 @@ img{vertical-align:top}
     margin-top: -1.16rem;
     left: 50%;
     margin-left: -.96rem;
+
+
+}
+
+
+.p1_yun{
+
+    position: absolute;
+    width: 1.93rem;
+    height: 1.93rem;
+
+    animation: rotate 2s linear infinite;
+    -webkit-animation:rotate 2s linear infinite;
+    -moz-animation:rotate 2s linear infinite;
+    -o-animation:rotate 2s linear infinite;
 }
 
 .p1_yun2{
@@ -84,6 +97,11 @@ img{vertical-align:top}
     height: 1.59rem;
     top:0.15rem;
     left: 0.15rem;
+
+    animation: rotate2 1s linear infinite;
+    -webkit-animation:rotate2 1s linear infinite;
+    -moz-animation:rotate2 1s linear infinite;
+    -o-animation:rotate2 1s linear infinite;
 }
 
 .p1_mobile{
@@ -93,6 +111,11 @@ img{vertical-align:top}
     height: .8rem;
     top: .6rem;
     left: .7rem;
+
+    animation: rotate3 1s linear infinite;
+    -webkit-animation:rotate3 1s linear infinite;
+    -moz-animation:rotate3 1s linear infinite;
+    -o-animation:rotate3 1s linear infinite;
 }
 
 .p1_txt{
@@ -117,10 +140,71 @@ img{vertical-align:top}
 
 }
 
+.page3{
+
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 12.36rem;*/
+    display: block;
+    /*min-height: 5.68rem;*/
+    background-image: url("../images/p3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+
+}
+
+.page3 .title{
+
+    position: absolute;
+    width: 3.81rem;
+    height: .75rem;
+    left: 50%;
+    margin-left: -1.9rem;
+    margin-top: .3rem;
+
+}
+
+.page3 .btn_mc{
+
+
+    position: relative;
+    width:5.1rem;
+    height: .45rem;
+    top: 90%;
+    margin: 0 auto;
+
+
+}
+
+
+.page3 .btn1{
+
+    position: relative;
+    width: 2.41rem;
+    height: .45rem;
+    display: inline-block;
 
 
 
+}
 
+.page3 .btn2{
+
+    position: relative;
+    width: 2.41rem;
+    height: .45rem;
+    display: inline-block;
+
+
+
+}
 
 
 
@@ -138,21 +222,19 @@ img{vertical-align:top}
 .bg{
 
     position: absolute;
-    width: 9rem;
-    height: 12.36rem;
-    left: 50%;
-    margin-left: -4.5rem;
-
-
-}
-
-.black_mc{
-
-    position: absolute;
     width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.6);
+
+
+
 }
+
+/*.black_mc{*/
+
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: rgba(0,0,0,.6);*/
+/*}*/
 
 
 
@@ -173,10 +255,10 @@ img{vertical-align:top}
 .title{
 
     position: relative;
-    width:5.44rem ;
-    height: .84rem;
+    width:3.52rem ;
+    height: .74rem;
     margin: 0 auto;
-    margin-top: .5rem;
+    margin-top: .3rem;
 
 }
 .title2{
@@ -197,7 +279,7 @@ img{vertical-align:top}
     height: .48rem;
     margin: 0 auto;
     font-size: .28rem;
-    color: white;
+    color: black;
     margin-top: .40rem;
 
 }
@@ -208,7 +290,7 @@ img{vertical-align:top}
     height: .48rem;
     margin: 0 auto;
     font-size: .28rem;
-    color: white;
+    color: black;
     margin-top: .30rem;
 
 }
@@ -219,7 +301,7 @@ img{vertical-align:top}
     height: .48rem;
     margin: 0 auto;
     font-size: .28rem;
-    color: white;
+    color: black;
     margin-top: .40rem;
 
 
@@ -231,9 +313,9 @@ input{
     width: 3.1rem;
     height: .48rem;
     font-size: .28rem;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     background: transparent;
-    color: white;
+    color: black;
     padding: 0;
     padding-left: .10rem;
     border-radius: 0;
@@ -256,7 +338,7 @@ input{
     height: .48rem;
     margin: 0 auto;
     font-size: .28rem;
-    color: white;
+    color: black;
     margin-top: .40rem;
 
 }
@@ -267,7 +349,7 @@ input{
     height: .48rem;
     margin: 0 auto;
     font-size: .28rem;
-    color: white;
+    color: black;
     margin-top: .30rem;
 
 }
@@ -277,7 +359,7 @@ input{
     height: .48rem;
     margin: 0 auto;
     font-size: .28rem;
-    color: white;
+    color: black;
     margin-top: .30rem;
 
 }
@@ -288,9 +370,9 @@ select{
     width: 3.30rem;
     height: .55rem;
     font-size: .28rem;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     background: transparent;
-    color: white;
+    color: black;
     padding-left: .10rem;
     border-radius: 0;
 
@@ -302,7 +384,7 @@ select{
     height: .48rem;
     margin: 0 auto;
     font-size: .28rem;
-    color: white;
+    color: black;
     margin-top: .30rem;
 
 }
@@ -363,6 +445,18 @@ select{
 
 }
 
+.p5_bg{
+
+    position: absolute;
+    width: 9rem;
+    height: 12.36rem;
+    left: 50%;
+    margin-left: -4.5rem;
+
+
+
+}
+
 .page5 .title{
 
 
@@ -370,7 +464,7 @@ select{
     width: 3.56rem;
     height: .56rem;
     margin: 0 auto;
-    margin-top: .4rem;
+    margin-top: .3rem;
 
 }
 
@@ -381,8 +475,8 @@ select{
     width: 5.2rem;
     height: .56rem;
     margin: 0 auto;
-    margin-top: .4rem;
-    display: none;
+    margin-top: .3rem;
+    display: block;
 
 
 }
@@ -392,7 +486,7 @@ select{
     position: absolute;
     width: 4.66rem;
     height: 2.28rem;
-    bottom: 18%;
+    bottom: 20%;
     left: 50%;
     margin-left: -2.33rem;
 
@@ -404,7 +498,7 @@ select{
     width: 1rem;
     height: 1rem;
     margin: 0 auto;
-    margin-top: .2rem;
+    margin-top: .1rem;
 
 }
 
@@ -416,4 +510,85 @@ select{
     margin: 0 auto;
     margin-top: .1rem;
 
+}
+
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg) skew(0deg) scale(1);
+        -ms-transform:rotate(0deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(0deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(0deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(0deg) skew(0deg) scale(1);
+    }
+    100%{
+        transform:rotate(360deg) skew(0deg) scale(1);
+        -ms-transform:rotate(360deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(360deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(360deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(360deg) skew(0deg) scale(1);
+    }
+}
+
+@keyframes rotate2{
+    0%{
+        transform:rotate(0deg) skew(0deg) scale(1);
+        -ms-transform:rotate(0deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(0deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(0deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(0deg) skew(0deg) scale(1);
+    }
+    100%{
+        transform:rotate(-360deg) skew(0deg) scale(1);
+        -ms-transform:rotate(-360deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(-360deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(-360deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(-360deg) skew(0deg) scale(1);
+    }
+}
+
+@keyframes rotate3{
+    0%{
+        transform:rotate(0deg) skew(0deg) scale(1);
+        -ms-transform:rotate(0deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(0deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(0deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(0deg) skew(0deg) scale(1);
+    }
+
+
+    25%{
+
+        transform:rotate(30deg) skew(0deg) scale(1);
+        -ms-transform:rotate(30deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(30deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(30deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(30deg) skew(0deg) scale(1);
+
+
+
+    }
+
+    75%{
+
+
+        transform:rotate(-30deg) skew(0deg) scale(1);
+        -ms-transform:rotate(-30deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(-30deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(-30deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(-30deg) skew(0deg) scale(1);
+
+
+
+    }
+
+
+
+    100%{
+        transform:rotate(0deg) skew(0deg) scale(1);
+        -ms-transform:rotate(0deg) skew(0deg) scale(1);     /* IE 9 */
+        -moz-transform:rotate(0deg) skew(0deg) scale(1);     /* Firefox */
+        -webkit-transform:rotate(0deg) skew(0deg) scale(1); /* Safari ºÍ Chrome */
+        -o-transform:rotate(0deg) skew(0deg) scale(1);
+    }
 }

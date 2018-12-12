@@ -85,36 +85,52 @@ if(utm_campaign==null||utm_campaign==''){
 
 
 
-
-
-
+//初始化适应
 
 kevin_resize({size: [640, 1136], full:1});
 
+
+//获取定位信息
 var geolocation = new qq.maps.Geolocation("5LSBZ-25J3V-SY3PK-UK574-HDNTK-JWFJM", "biothermh5");
 
-$(function(){
 
-    var $img = $('img');
-    var num = 0;
-    $img.each(function(i){
-        var oImg = new Image();
-        oImg.onload  = function(){
-            oImg.onload = null;//避免重复请求
-            $('.loading b').html( parseInt(num/ $img.length*100)+'%');
+//加载
 
-            num++;
+loader_Fun()
 
-            //console.log(num)
-            if(num>= i){
-                $('.loading').fadeOut();
-                $('.main').show()
+//加载
 
-            }
+function loader_Fun(){
+
+    var callbacks = [];
+    imgLoader(['images/AdviseVertical.png','images/bg.jpg','images/guize.png','images/p1_mobile.png','images/p1_txt.png','images/yun1.png','images/p1_yun2.png','images/p2.gif','images/p3.jpg','images/p3-01.png','images/p3-01_1.png','images/p3-02.png','images/p3-03.png','images/p3-04.png','images/p3-05.png','images/p3-06.png','images/p3-07.png','images/p3_btn.png','images/p3_btn2.png','images/p3_title.png','images/p5_bg.jpg','images/page1_bg.jpg','images/qr.jpg','images/text.png','images/text1.png','images/title2.png','images/title3.png'], function(percentage){
+
+        var i = callbacks.length;
+        callbacks.push(function(){
+            setTimeout(function(){
+                var percentT = percentage * 100;
+                $('.loading b').html((parseInt(percentT)) + '%');
+                if (percentage == 1) {
+                    setTimeout(function(){
+                        $('.loading').remove();
+                        $('.main').css('display','block')
+
+
+                    }, 100);
+                }
+                callbacks[i + 1] && callbacks[i + 1]();
+            },50);
+        });
+
+        if(percentage == 1) {
+
+            callbacks[0]();
         }
-        oImg.src = $img[i].src;
-    })
-})
+
+
+    });
+
+}
 
 
 //横屏提示
@@ -141,6 +157,8 @@ $(document).ready(function(){
 
 
 
+    //微信浏览器后退重新刷新
+
     $(function () {
         window.addEventListener("popstate", function(e) {
             self.location.reload();
@@ -157,7 +175,7 @@ $(document).ready(function(){
 
     //重力感应
 
-    var SHAKE_THRESHOLD = 300;
+    var SHAKE_THRESHOLD = 3000;
     var last_update = 0;
     var x = y = z = last_x = last_y = last_z = 0;
     function shakingGesture_init() {
@@ -178,14 +196,45 @@ $(document).ready(function(){
             z = acceleration.z;
             var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
             if (speed > SHAKE_THRESHOLD) {
-                alert("摇动了");
+
+
+                $('.page1').hide()
+                $('.page2').show()
+
+                var _timeout = setTimeout(function () {
+
+                    $('.page2').hide()
+                    $('.page3').show()
+                    clearTimeout(_timeout);
+
+                }, 2600);
+
+
             }
             last_x = x;
             last_y = y;
             last_z = z;
         }
     }
+
     shakingGesture_init();
+
+
+
+    //免费申领
+
+    $('.btn1').click(function(){
+
+
+        $('.page3').hide()
+        $('.page4').show()
+
+
+
+    })
+
+
+
 
 
 
@@ -586,12 +635,12 @@ $(document).ready(function(){
 
         if (_iis) {
 
-            $('#click_img').attr('src','../img/p3-06.png')
+            $('#click_img').attr('src','images/p3-06.png')
             _iis=false
 
         }else{
 
-            $('#click_img').attr('src','../img/p3-05.png')
+            $('#click_img').attr('src','images/p3-05.png')
             _iis=true
 
         }
@@ -607,8 +656,8 @@ $(document).ready(function(){
     function submit_C(e){
 
 
-        $('.page1').hide()
-        $('.page2').show()
+        $('.page4').hide()
+        $('.page5').show()
 
 
 
