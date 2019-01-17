@@ -48,7 +48,7 @@ window.addEventListener("load",function(){
                     stage.resize()
                     stage.y=430
 
-                    page1_mc.flower_mc.y=838+40
+                    page1_mc.flower_mc.y=838+80
 
 
 
