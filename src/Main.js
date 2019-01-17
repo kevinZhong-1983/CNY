@@ -48,15 +48,12 @@ window.addEventListener("load",function(){
                     stage.resize()
                     stage.y=430
 
-                    page1_mc.flower_mc.y=838+80
-
-
 
                 }else{
 
                     stage.scaleMode=annie.StageScaleMode.FIXED_HEIGHT
                     stage.resize()
-                    page1_mc.flower_mc.y=838
+
                 }
 
 
@@ -74,7 +71,21 @@ window.addEventListener("load",function(){
                     }else{
 
 
+                        if($(window).width()==375&&$(window).height()==724){
+
+
+                            page1_mc.flower_mc.y=838+60
+
+                        }else{
+
+                            page1_mc.flower_mc.y=838
+
+
+                        }
+
                         page1_mc.flower_mc.gotoAndPlay(2)
+
+                        console.log(page1_mc.flower_mc.y)
 
                     }
 
