@@ -27,11 +27,6 @@ window.addEventListener("load",function(){
 
 
 
-
-
-
-
-
             	stage.addChild(new index.Index());
 
 
@@ -53,7 +48,7 @@ window.addEventListener("load",function(){
                     stage.resize()
                     stage.y=430
 
-                    page1_mc.flower_mc.y=838+40
+                    page1_mc.flower_mc.y=838+70
 
 
 
@@ -66,9 +61,25 @@ window.addEventListener("load",function(){
 
 
 
+                page1_mc.addEventListener(annie.Event.CALL_FRAME,function (e) {
 
 
-                stage.addEventListener(annie.MouseEvent.MOUSE_DOWN,onC)
+                    console.log(e.data.frameName)
+                    if(e.data.frameName=="open"){
+
+
+                        stage.addEventListener(annie.MouseEvent.MOUSE_DOWN,onC)
+
+
+                    }
+
+                });
+
+
+
+
+
+
 
                 function onC(e){
 
