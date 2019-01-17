@@ -48,7 +48,7 @@ window.addEventListener("load",function(){
                     stage.resize()
                     stage.y=430
 
-                    page1_mc.flower_mc.y=838+70
+                    page1_mc.flower_mc.y=838+40
 
 
 
@@ -70,6 +70,11 @@ window.addEventListener("load",function(){
 
                         stage.addEventListener(annie.MouseEvent.MOUSE_DOWN,onC)
 
+
+                    }else{
+
+
+                        page1_mc.flower_mc.gotoAndPlay(2)
 
                     }
 
