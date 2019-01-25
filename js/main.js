@@ -139,8 +139,8 @@ $(document).ready(function(){
 
 
     TweenMax.fromTo($(".lihua"),32,{y:-1236,ease:Linear.easeOut},{y:1236,ease:Linear.easeOut,repeat:-1});
-    TweenMax.fromTo($(".lihua2"),20,{alpha:1,y:-1236,ease:Linear.easeOut,delay:0},{alpha:1,delay:0,y:1236,ease:Linear.easeOut,repeat:-1},);
-    TweenMax.fromTo($(".lihua3"),38,{y:-1236,ease:Linear.easeOut,delay:0},{y:1236,ease:Linear.easeOut,delay:0,repeat:-1},);
+    TweenMax.fromTo($(".lihua2"),20,{alpha:1,y:-1236,ease:Linear.easeOut,delay:0},{alpha:1,delay:0,y:1236,ease:Linear.easeOut,repeat:-1});
+    TweenMax.fromTo($(".lihua3"),38,{y:-1236,ease:Linear.easeOut,delay:0},{y:1236,ease:Linear.easeOut,delay:0,repeat:-1});
 
 
     function page1_Fun(){
